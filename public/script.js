@@ -3,9 +3,9 @@
    ========================================================= */
 
 const CONFIG = {
-  COMPANY: "Harbour & Vine Realty",
-  AGENT: "Daniel Mercer",
-  OWNER_EMAIL: "daniel@harbourandvine.com",
+  COMPANY: "Clifford Real Estate Company",
+  AGENT: "Clifford",
+  OWNER_EMAIL: "amandamg3249@gmail.com",
   EMAILJS_PUBLIC_KEY: "",
   EMAILJS_SERVICE_ID: "",
   EMAILJS_TEMPLATE_ID: "",
