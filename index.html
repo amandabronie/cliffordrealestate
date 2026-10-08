@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Harbour & Vine Realty — residential sales, rentals, and commercial advisory in Lagos, Abuja, and Port Harcourt."
+    />
+    <title>Clifford Realty — Property, handled with a steady hand</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ NAV ============ -->
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a href="#" class="brand">Clifford Real Estate Company</a>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#apply">Apply</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#apply" class="nav-cta">Apply Now</a>
+      </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">California · Alaska · Hawaii And Many More</p>
+        <h1>Property, handled<br /><em>with a steady hand.</em></h1>
+        <p class="hero-sub">
+          Fourteen years of matching people with places they're proud to call
+          home. Residential sales, rentals, and commercial advisory.
+        </p>
+        <div class="hero-actions">
+          <a href="#apply" class="btn btn-primary">Start your application</a>
+          <a href="#about" class="btn btn-ghost">Meet the agent</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <div class="about-grid">
+        <div class="about-photo">
+          <!-- Replace agent.jpg with the client's real photo (portrait, 1000x1250 recommended) -->
+          <img
+            src="photos/agent-photo.png"
+            alt="Daniel Mercer, Principal Broker"
+          />
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">Your Agent</p>
+          <h2>Clifford</h2>
+          <p class="role">Principal Broker &amp; Founder</p>
+
+          <p class="lead">
+            Clifford started Clifford Real Estate in 2016 after a decade
+            negotiating commercial leases for a national firm. He built the
+            agency on a simple premise: clients deserve straight answers,
+            realistic valuations, and someone who picks up the phone.
+          </p>
+          <p>
+            He personally handles every listing that comes through this page —
+            from the first walkthrough to the final signature. Registered with
+            the Estate Surveyors and Valuers Registration Board of Nigeria.
+          </p>
+
+          <div class="stats">
+            <div><strong>480+</strong><span>Properties sold</span></div>
+            <div><strong>$9.2M</strong><span>Transaction value</span></div>
+            <div><strong>4.9★</strong><span>Client rating</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPLICATION FORM ============ -->
+    <section id="apply" class="apply">
+      <div class="apply-head">
+        <p class="eyebrow">Apply</p>
+        <h2>Rental Application</h2>
+        <p class="apply-sub">
+          Complete the form below to apply for a property. Your details and
+          signature are converted into a PDF and sent directly to our office.
+        </p>
+      </div>
+
+      <div class="apply-inner">
+        <form id="rentalForm" class="form" novalidate>
+          <!-- Property Details -->
+          <h3 class="form-section-title">Property Details</h3>
+
+          <div class="field">
+            <label for="propertyAddress"
+              >Property you're applying for <span>*</span></label
+            >
+            <input
+              type="text"
+              id="propertyAddress"
+              name="propertyAddress"
+              required
+              placeholder="Street address"
+            />
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="viewingDate">Preferred viewing date &amp; time</label>
+              <input
+                type="datetime-local"
+                id="viewingDate"
+                name="viewingDate"
+              />
+            </div>
+            <div class="field">
+              <label for="moveInDate">Move-in date</label>
+              <input type="date" id="moveInDate" name="moveInDate" />
+            </div>
+          </div>
+
+          <!-- Personal Details -->
+          <h3 class="form-section-title">Personal Details</h3>
+
+          <div class="row">
+            <div class="field">
+              <label for="firstName">First name <span>*</span></label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                autocomplete="given-name"
+                required
+                placeholder="First name"
+              />
+            </div>
+            <div class="field">
+              <label for="lastName">Last name <span>*</span></label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                autocomplete="family-name"
+                required
+                placeholder="Last name"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="dob">Date of birth</label>
+              <input type="date" id="dob" name="dob" autocomplete="bday" />
+            </div>
+            <div class="field">
+              <label for="tenantEmail">Email address <span>*</span></label>
+              <input
+                type="email"
+                id="tenantEmail"
+                name="tenantEmail"
+                autocomplete="email"
+                required
+                placeholder="you@example.com"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone <span>*</span></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              required
+              placeholder="+1 (800) 000-0000"
+            />
+          </div>
+
+          <!-- Employment -->
+          <div class="field checkbox-group">
+            <label>Employment status</label>
+            <div class="checkbox-row">
+              <label class="cb-label"
+                ><input
+                  type="radio"
+                  name="employment"
+                  value="Employed"
+                  required
+                />
+                Employed</label
+              >
+              <label class="cb-label"
+                ><input type="radio" name="employment" value="Unemployed" />
+                Unemployed</label
+              >
+              <label class="cb-label"
+                ><input type="radio" name="employment" value="Self employed" />
+                Self employed</label
+              >
+              <label class="cb-label"
+                ><input type="radio" name="employment" value="Retired" />
+                Retired</label
+              >
+              <label class="cb-label"
+                ><input type="radio" name="employment" value="Student" />
+                Student</label
+              >
+            </div>
+          </div>
+
+          <!-- Declaration -->
+          <div class="declaration-box">
+            <p class="declaration-text">
+              I declare that the information I have provided on this form is
+              true and correct, and hereby authorise you to verify the details
+              given and to seek references as required, including a banker's
+              reference and a credit check. I agree to you disclosing the
+              reference replies to the landlord of the property for which I am
+              applying. I understand that this does not represent any offer or
+              contract of any nature. I further understand that if you decline
+              to offer me a tenancy no explanation need be given.
+            </p>
+            <label class="cb-label agree-label">
+              <input
+                type="checkbox"
+                id="declarationAgree"
+                name="declarationAgree"
+                required
+              />
+              I agree to the declaration above <span>*</span>
+            </label>
+          </div>
+
+          <div class="fee-notice">
+            <p>
+              <strong>Note:</strong> I agree to make payment for the refundable
+              application fee of $100. Cash or cheque not accepted. Payment is
+              refunded immediately after viewing, whether interested or not
+              interested in the property.
+            </p>
+          </div>
+
+          <!-- Payment -->
+          <div class="field checkbox-group">
+            <label
+              >How would you like to pay the refundable application fee?
+              <span>*</span></label
+            >
+            <div class="checkbox-row">
+              <label class="cb-label"
+                ><input type="radio" name="payment" value="Zelle" required />
+                Zelle</label
+              >
+              <label class="cb-label"
+                ><input type="radio" name="payment" value="Apple Pay" /> Apple
+                Pay</label
+              >
+              <label class="cb-label"
+                ><input type="radio" name="payment" value="CashApp" />
+                CashApp</label
+              >
+              <label class="cb-label"
+                ><input type="radio" name="payment" value="Venmo" />
+                Venmo</label
+              >
+            </div>
+          </div>
+
+          <!-- Comments -->
+          <div class="field">
+            <label for="comments">Any further comments?</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="3"
+              placeholder="Anything else we should know…"
+            ></textarea>
+          </div>
+
+          <!-- Signature -->
+          <h3 class="form-section-title">Signature</h3>
+
+          <div class="field signature-field">
+            <div class="signature-wrapper">
+              <canvas id="signatureCanvas"></canvas>
+              <button type="button" id="clearSignature" class="clear-btn">
+                Clear
+              </button>
+            </div>
+            <p class="signature-hint">
+              Draw your signature above using your mouse, stylus, or finger.
+            </p>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-actions">
+            <button type="submit" id="submitBtn" class="btn-submit">
+              <span class="btn-label">Submit Application</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <p class="fineprint">
+              By submitting you agree to be contacted about your application. A
+              PDF summary is emailed to our office.
+            </p>
+          </div>
+
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer id="contact" class="site-footer">
+      <div class="footer-inner">
+        <p class="brand">Clifford Real Estate</p>
+        <div class="footer-links">
+          <a href="tel:+1 (800) 000-0000">Number here</a>
+          <a href="mailto:daniel@harbourandvine.com">cliffordzea@gmail.com</a>
+          <a href="#">United States</a>
+        </div>
+        <p class="footer-copy">
+          © <span id="year"></span> Harbour &amp; Vine Realty · RC 1048821 ·
+          ESVARBON Licensed
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="signature_pad.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
