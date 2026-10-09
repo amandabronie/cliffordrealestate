@@ -1,11 +1,11 @@
 /* =========================================================
-   Harbour & Vine Realty — Rental Application Form
+   Clifford Real Estate Company — Rental Application Form
    ========================================================= */
 
 const CONFIG = {
   COMPANY: "Clifford Real Estate Company",
   AGENT: "Clifford",
-  OWNER_EMAIL: "amandamg3249@gmail.com",
+  OWNER_EMAIL: "cliffordzea@gmail.com",
   EMAILJS_PUBLIC_KEY: "",
   EMAILJS_SERVICE_ID: "",
   EMAILJS_TEMPLATE_ID: "",
@@ -234,7 +234,7 @@ function buildPdf(d, signatureDataUrl) {
   doc.setFontSize(8);
   doc.setTextColor(140, 148, 158);
   doc.text(
-    "Generated automatically from the Harbour & Vine website.",
+    "Generated automatically from the Clifford Real Estate Company website.",
     M,
     fy + 2,
   );
